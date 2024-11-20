@@ -2,15 +2,21 @@
 <html lang="ja">
     <head>
         <title>ECL form</title>
+        <link rel="stylesheet" type="text/css" href="./form.css" />
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
+        <script>
+            const sendMessage = () => {
+                alert("質問を受け付けました。");
+            };
+        </script>
         <form method="POST" action="./form">
             <label for="story">電子商取引研究室の質問をご記入ください:</label>
             <br />
             <textarea required minlength="10" placeholder="お問い合わせ内容" name="content" cols="100" rows="5"></textarea>
             <br />
-            <input type="submit" value="送信" />
+            <input type="submit" value="送信" onclick="sendMessage()" />
         </form>
     </body>
 </html>

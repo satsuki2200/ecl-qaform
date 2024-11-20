@@ -1,0 +1,20 @@
+textarea {
+    resize: none;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    textarea {
+        width: 100%;
+        /* max-width: 500px;
+        max-height: 130px; */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    textarea {
+        width: 100%;
+        /* max-width: 250px;
+        max-height: 100px; */
+    }
+}
