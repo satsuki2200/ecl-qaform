@@ -8,10 +8,13 @@
     <body>
         <script>
             const sendMessage = () => {
-                alert("質問を受け付けました。");
+                const textarea = document.qaform.content.value;
+                if (textarea.length >= 10) {
+                    alert("質問を受け付けました。");
+                }
             };
         </script>
-        <form method="POST" action="./form">
+        <form method="POST" action="./form" name="qaform">
             <label for="story">電子商取引研究室の質問をご記入ください:</label>
             <br />
             <textarea required minlength="10" placeholder="お問い合わせ内容" name="content" cols="100" rows="5"></textarea>
